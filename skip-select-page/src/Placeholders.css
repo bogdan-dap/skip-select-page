@@ -1,0 +1,32 @@
+.placeholder-container {
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .placeholder-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  
+  /* Styling the button */
+  .placeholder-button {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.375rem;
+    font-size: 100%;
+    margin-top: 1rem;  /* Optional space above the button */
+  }
+  
+  /* Hover effect on the button */
+  .placeholder-button:hover {
+    border-color: #a8e6cf;
+  }

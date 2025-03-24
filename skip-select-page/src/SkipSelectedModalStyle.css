@@ -1,0 +1,128 @@
+/* .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: rgba(28 28 28 / 1);
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 400px;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-buttons {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  font-size: 100%;
+}
+
+.modal-buttons:hover {
+  border-color: #a8e6cf;
+}
+
+.pb {
+  padding-bottom: 1rem;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+} */
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s;
+}
+
+.modal-content {
+  background: rgba(28, 28, 28, 1);
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 400px;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
+  border: solid 1px #a8e6cf;
+}
+
+/* Fade In */
+.fade-in {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fade-in .modal-content {
+  transform: translateY(0);
+}
+
+/* Fade Out */
+.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.fade-out .modal-content {
+  transform: translateY(-10px);
+}
+
+.modal-buttons {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  font-size: 100%;
+}
+
+.modal-buttons:hover {
+  border-color: #a8e6cf;
+}
+
+.pb {
+  padding-bottom: 1rem;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
