@@ -18,7 +18,7 @@
 
 .content-container {
   flex-grow: 1;
-  margin-top: 20rem; /* Add some spacing below Menu and Title */
+  margin-top: 20rem;
 }
 
 button {

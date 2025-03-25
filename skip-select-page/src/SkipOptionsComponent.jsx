@@ -135,7 +135,9 @@ function SkipOptionsComponent() {
               </div>
               <button
                 // onClick={() => handleModalOpen(skip, index)}
-                className={`pb skip-button text-white ${
+                className={`pb skip-button ${
+                  !skip.allows_heavy_waste ? "disabled" : ""
+                } text-white ${
                   activeIndex === index ? "clicked" : ""
                 }`}
               >
