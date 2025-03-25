@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./SkipOptionsComponentStyle.css";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "./SkipsCarousel.css";
 import "lucide-static/font/lucide.css";
 import Spinner from "./SpinnerComponent";
 import SkipModal from "./SkipSelectedModal";

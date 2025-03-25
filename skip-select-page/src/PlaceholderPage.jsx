@@ -9,11 +9,11 @@ function PlaceholderPage() {
   };
 
   return (
-    <div className="placeholder-container">
-      <h1 className="placeholder-title">
+    <div className="placeholder-container ">
+      <h1 className="placeholder-title ">
         This is an placeholder for Waste Type page
       </h1>
-      <button className="placeholder-button" onClick={handleBack}>
+      <button className="placeholder-button text-white" onClick={handleBack}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="17"

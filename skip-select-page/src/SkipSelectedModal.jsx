@@ -53,7 +53,7 @@ function SkipModal({ skip, onClose }) {
           <button onClick={closeWithAnimation} className="modal-buttons">
             <span className="text-white">Close</span>
           </button>
-          <button className="modal-buttons" onClick={handleContinue}>
+          <button className="modal-buttons text-white" onClick={handleContinue}>
             <span className="text-white">
               Confirm
             </span>
