@@ -13,7 +13,6 @@ function SkipModal({ skip, onClose }) {
   };
 
   useEffect(() => {
-    // Trigger fade-in when component mounts
     setTimeout(() => setVisible(true), 10);
 
     function handleClickOutside(event) {
@@ -29,7 +28,7 @@ function SkipModal({ skip, onClose }) {
 
   const closeWithAnimation = () => {
     setVisible(false);
-    setTimeout(onClose, 300); // Wait for animation to finish before closing
+    setTimeout(onClose, 300);
   };
 
   if (!skip) return null;

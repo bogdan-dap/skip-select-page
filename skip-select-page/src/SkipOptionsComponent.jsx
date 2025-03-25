@@ -37,17 +37,17 @@ function SkipOptionsComponent() {
   }, []);
 
   const handleModalClose = () => {
-    setShowModal(false); // Begin fade-out by setting showModal to false
+    setShowModal(false); 
     setActiveIndex(null);
     setTimeout(() => {
-      setSelectedSkip(null); // Reset selected skip after fade-out
-    }, 300); // This matches the fade-out transition duration (300ms)
+      setSelectedSkip(null);
+    }, 300); 
   };
 
   const handleModalOpen = (skip, index) => {
     setSelectedSkip(skip);
     setActiveIndex(index);
-    setShowModal(true); // Show the modal and trigger fade-in
+    setShowModal(true); 
   };
 
   return (
@@ -134,7 +134,6 @@ function SkipOptionsComponent() {
                 </div>
               </div>
               <button
-                // onClick={() => handleModalOpen(skip, index)}
                 className={`pb skip-button ${
                   !skip.allows_heavy_waste ? "disabled" : ""
                 } text-white ${
